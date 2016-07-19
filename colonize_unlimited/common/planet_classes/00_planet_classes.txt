@@ -546,6 +546,36 @@ pc_infested = {
 }
 
 
+pc_infested_gas_giant = {
+	entity = "gas_giant"		#DONE
+	picture = pc_infested
+	entity_scale = @planet_standard_scale
+	icon_frame = 16
+
+	atmosphere_color 		= hsv { 0.75 0.2 0.7 }
+	atmosphere_intensity 	= 0.1
+	atmosphere_width 		= 1.2
+
+	# Should not really be needed, because swarm should not have cities, but they do currently, and if this is not here, you get lots of errors
+	city_color_lut = "gfx/portraits/misc/colorcorrection_neutral.dds"
+
+	min_distance_from_sun = 120
+	max_distance_from_sun = 1000
+	spawn_odds = 0
+
+	extra_orbit_size = 0
+	extra_planet_count = 0
+
+	chance_of_ring = 0
+
+	planet_size = { min = 12 max = 25 }
+	moon_size = { min = 7 max = 12 }
+
+	colonizable = no
+
+	show_city = no
+}
+
 pc_gaia = {
 	entity = "gaia_planet"
 	picture = pc_continental # there's no unique gaia_planet picture
